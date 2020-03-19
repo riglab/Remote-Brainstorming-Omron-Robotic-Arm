@@ -11,18 +11,30 @@ There are three wires coming out from the robotic arm:
 
 Please refer to individual section detailed intructions or steps:
 - [**Starting ACE**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#starting-ace)
-- [**Drawing Area Calibration**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#drawing-area-calibration)
+- [**Drawing Area Setting and Calibration**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#drawing-area-calibration)
 - [**Tasks Running**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#tasks-running)
 - [**Processing**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#processing)
 
 
 ## Starting ACE
 
-## Drawing Area Calibration
+
+
+
+## Drawing Area setting and Calibration
+
+
+
 
 ## Tasks Running
 
+
+
+
 ## Processing
+
+
+
 ```
 
 ```
