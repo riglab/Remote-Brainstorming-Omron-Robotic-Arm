@@ -7,8 +7,11 @@ There are three wires coming out from the robotic arm:
   - **USB Cable (with Matt's name on it)**: Use to access the interior information from the controller, ex. resetting the timer.
   - **USB Serial communication Cable (transparent one)**: Use to do serial communication with the processor.
 
-
-
+Please refer to individual section detailed intructions or steps:
+- **Starting ACE**
+- **Drawing Area Calibration**
+- **Tasks Running**
+- **Processing**
 
 
 
