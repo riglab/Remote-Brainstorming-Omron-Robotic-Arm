@@ -21,15 +21,13 @@ Please refer to individual section detailed intructions or steps:
 
 2) Connect the Ethernet cable and USB cable to your laptop. If you're using an adapter for the Ethernet cable, please make sure you install the driver for the adapter. 
 
-3) Open the ACE software, you should see the image below. Go to the "Connect to Controller" option to check whether your laptop does detect the robot by clicking the refresh button, the robot option should appear on the list automatically with an IP address. If you are not able to see the option, you might need to turn off the FireWall on your laptop. Please close down ACE software, go to setting and turn off the FireWall option on your laptop and re-open ACE software again. When you see the robot option, please write down the IP address of the robot for later use.
+3) Open the ACE software, you should see the image below. Go to the "Connect to Controller" page to check whether your laptop does detect the robot by clicking the refresh button, the robot option should appear on the list automatically with an IP address. If you are not able to see the option, you might need to turn off the FireWall on your laptop. Please close down ACE software, go to setting and turn off the FireWall option on your laptop and re-open ACE software again. When you see the robot option, please write down the IP address of the robot for later use.
 
-4) Download the program file we have for this project: 
+4) Download the program file (awp.) we have for this project: [drawingProgram_V2.awp](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/drawingProgram_V2.awp).
 
+5) Go back to ACE and go to the "Load Saved Workspace" page and open the program file (awp.) you just downloaded.
 
-5)
-
-
-6)
+6) 
 
 ## Drawing Area setting and Calibration
 
