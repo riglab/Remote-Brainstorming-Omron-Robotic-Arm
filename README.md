@@ -61,6 +61,7 @@ Please refer to individual section for detailed intructions or steps:
 
 
 ## Robot Control
+Make sure you have turn on he high power mode so that the robot can actually move, step 8 from the last section.
 Before starting to run the program, you should know the orientation of the robot and the two ways we will be using here to move the robot.
 
 ### Orientation
@@ -105,10 +106,18 @@ ACE software uses eV+ language to control the robot directly, we will list out a
 
 
 ### Robot Control Panel
+Beside using direct commands to control the robot, you will be able to use the control panel from he ACE software.
 
 <p align="center">
 <img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Robot%20Control%20Panel.PNG" width="500"/>
 </p>
+
+- **Joint**
+  This is a 6-DoF robotic arm, and you will be able to click on the individual joint and control the degree.
+
+- **World Coordinates**
+  With the orientation of the robot, you will be about to move it along the x,y,z directions.
+
 
 ## Drawing Area Setting and Calibration
 The way the program sets up the robot is to define a drawing area on a flate plane with three points: #righttop, #leftbottom, and #rightbottom. In this section, you will learn how to calibrate these three points and have the program remember them.
