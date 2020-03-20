@@ -24,25 +24,26 @@ Please refer to individual section detailed intructions or steps:
 
 3) Open the ACE software, you should see the image below. Go to the "Connect to Controller" page to check whether your laptop does detect the robot by clicking the refresh button, the robot option, Viper850, should appear on the list automatically with an IP address. If you are not able to see the option, you might need to turn off the FireWall on your laptop. Please close down ACE software, go to setting and turn off the FireWall option on your laptop and re-open ACE software again. When you see the robot option, please write down the IP address of the robot for later use.
 
-![ACE Starting](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Starting%20of%20the%20Project.PNG)
+![ACE Starting](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Detecting%20Robot.PNG)
 
 4) Download the program file (awp.) we have for this project: [drawingProgram_V2.awp](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/ACE%20Program/drawingProgram_V2.awp).
 
 5) Go back to ACE and go under the "Load Saved Workspace" page and open the program file (awp.) you just downloaded.
 
-![ACE](Insert Image)
+![ACE_OpenProgram](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Opening%20Project.PNG)
 
 6) After launching the project, go to the menu on the left and double-click on "SmartController 50", you should be about to see the image as shown below. Check the IP address and see whether it matches the one you saw earlier from the robot list, if not, please change it.
 
-![ACE](Insert Image)
+![ACE SmartController](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Starting%20of%20the%20Project.PNG)
+![ACE IPChecking](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_IP%20Address%20Checking.PNG)
 
 7) Click on the connect button, it might take a while to load all the information and data. If it does not work, please try to re-open the software again with the steps above or try to re-start the robot. Double-check whether you turn off the FireWall on your laptop, it causes conflict with the robot.
 
-![ACE](Insert Image)
+![ACE ConnectButton](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Connect%20Button.jpg)
 
 8) After successfully connect to the robot, press the "Enable Power and Calibrate", shown in the image below. The software will ask you to press the "High Power" button on the emergency switch (physical one). Please look for the physical emergency switch, the high power button should be glowning while waiting for activation, press the button to activate.
 
-![ACE](Insert Image)
+![ACE EnablePower](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Enable%20Power.jpg)
 
 9) If everything connects and activates successfully, you are ready for the next section!
 
