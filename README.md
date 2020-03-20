@@ -25,9 +25,15 @@ Please refer to individual section detailed intructions or steps:
 
 4) Download the program file (awp.) we have for this project: [drawingProgram_V2.awp](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/drawingProgram_V2.awp).
 
-5) Go back to ACE and go to the "Load Saved Workspace" page and open the program file (awp.) you just downloaded.
+5) Go back to ACE and go under the "Load Saved Workspace" page and open the program file (awp.) you just downloaded.
 
-6) 
+6) After launching the project, go to the menu on the left and double-click on "SmartController 50", you should be about to see the image as shown below. Check the IP address and see whether it matches the one you saw earlier from the robot list, if not, please change it.
+
+7) Click on the connect button, it might take a while to load all the information and data. If it does not work, please try to re-open the software again with the steps above or try to re-start the robot. Double-check whether you turn off the FireWall on your laptop, it causes conflict with the robot.
+
+8) After successfully connect to the robot, press the "Enable Power and Calibrate", shown in the image below. The software will ask you to press the "High Power" button on the emergency switch (physical one). Please look for the physical emergency switch, the high power button should be glowning while waiting for activation, press the button to activate.
+
+9) If everything connects and activates successfully, you are ready for the next section!
 
 ## Drawing Area setting and Calibration
 
