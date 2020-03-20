@@ -26,7 +26,7 @@ Please refer to individual section detailed intructions or steps:
 
 ![ACE](Insert Image)
 
-4) Download the program file (awp.) we have for this project: [drawingProgram_V2.awp](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/drawingProgram_V2.awp).
+4) Download the program file (awp.) we have for this project: [drawingProgram_V2.awp](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/ACE%20Program/drawingProgram_V2.awp).
 
 5) Go back to ACE and go under the "Load Saved Workspace" page and open the program file (awp.) you just downloaded.
 
@@ -80,7 +80,7 @@ The way the program sets up the robot is to define a drawing area on a flate pla
 
 ## Processing
 
-[adeptRobotController_V2.pde](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/adeptRobotController_V2.pde)
+[adeptRobotController_V2.pde](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Processing%20Code/adeptRobotController_V2.pde)
 
 
 ```
