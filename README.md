@@ -66,7 +66,9 @@ Before starting to run the program, you should know the orientation of the robot
 - **y Direction**: Green arrow, toward the left of the robot.
 - **z Direction**: Blue arrow, toward the top of the robot.
 
-![ACE](Insert Image)
+<p align="center">
+<img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Robot%20Orientation.PNG" width="500"/>
+</p>
 
 ### Control with EV+ Code
 
@@ -79,7 +81,9 @@ The way the program sets up the robot is to define a drawing area on a flate pla
 
 1) Open the robot control panel by clicking on the "Launch Robot Jog Control" button.
 
-![ACE](Insert Image)
+<p align="center">
+<img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Robot%20Control%20Panel.PNG" width="500"/>
+</p>
 
 2) 
 
@@ -98,3 +102,6 @@ The way the program sets up the robot is to define a drawing area on a flate pla
 
 ```
 
+<p align="center">
+<img src="" width="500"/>
+</p>
