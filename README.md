@@ -1,5 +1,7 @@
 # Remote Brainstorming - Omron Robotic Arm
 
+**Remember to hold the physical emergency stop button of the robot during the time you are controlling it, it can easily break things or hurt people. Press the red button immediately when anything goes wrong!!!**
+
 Please download the software, [ACE from Omron](https://automation.omron.com/en/us/forms/ace-robot-software-download-request-form), to operate the robot. Please note the software is only compatible with Window System.
 
 
@@ -71,7 +73,7 @@ Before starting to run the program, you should know the orientation of the robot
 </p>
 
 ### Control with eV+ Code
-ACE software uses eV+ language to control the robot directly, we will list out a few common commands here. Go to ACE and open the "Montitor Window", your laptop need to be connecting to the robot to be able to do so.
+ACE software uses eV+ language to control the robot directly, we will list out a few common commands here. Go to ACE and open the "Montitor Window", your laptop need to be connected to the robot to be able to do so.
 
 <p align="center">
 <img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Monitor%20Window.jpg" width="500"/>
@@ -85,17 +87,22 @@ ACE software uses eV+ language to control the robot directly, we will list out a
   ```
   The value "10" here means the 10% of the full speed, as you can do 0-100 with the variable. The "always" here means dsetting the default, if you did not add it, the speed setting will only remain for the next command line.
   
-- **Moving with Straight Line**
+- **Moving the Robot**
   
-  The robot can be move under the world xyz coordinates with point-to-point straight line with the displacements you set.
+  The robot can be move under the world xyz coordinates with/without point-to-point straight line with the displacements you set.
+  ```
+  .do move shift (here by x,y,z)
+  ```
   ```
   .do moves shift (here by x,y,z)
   ```
-  -"moves shift" means moving in straight line with the shift setting.
+  -"move/moves shift" adding "s" means moving in straight line with the shift setting.
   
   -"here by" means seeing the original point as the staring point.
   
-  -"x,y,z" will be the values of the displacements for three directions with unit of mm.
+  -"x,y,z" will be the values of the displacements for three directions with the unit of mm.
+  
+
 
 ### Robot Control Panel
 
