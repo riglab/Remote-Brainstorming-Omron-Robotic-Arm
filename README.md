@@ -24,7 +24,7 @@ Please refer to individual section detailed intructions or steps:
 
 3) Open the ACE software, you should see the image below. Go to the "Connect to Controller" page to check whether your laptop does detect the robot by clicking the refresh button, the robot option, Viper850, should appear on the list automatically with an IP address. If you are not able to see the option, you might need to turn off the FireWall on your laptop. Please close down ACE software, go to setting and turn off the FireWall option on your laptop and re-open ACE software again. When you see the robot option, please write down the IP address of the robot for later use.
 
-<img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Detecting%20Robot.PNG" width="500"/>
+<img align="center" src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Detecting%20Robot.PNG" width="500"/>
 
 4) Download the program file (awp.) we have for this project: [drawingProgram_V2.awp](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/ACE%20Program/drawingProgram_V2.awp).
 
