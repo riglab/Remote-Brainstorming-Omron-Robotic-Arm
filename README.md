@@ -11,6 +11,7 @@ There are three wires coming out from the robotic arm:
 
 Please refer to individual section detailed intructions or steps:
 - [**Starting**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#starting-ace)
+- [**Robot Control**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#starting-ace)
 - [**Drawing Area Setting and Calibration**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#drawing-area-calibration)
 - [**Tasks Running**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#tasks-running)
 - [**Processing**](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/README.md#processing)
@@ -45,8 +46,9 @@ Please refer to individual section detailed intructions or steps:
 
 9) If everything connects and activates successfully, you are ready for the next section!
 
-## Drawing Area Setting and Calibration
-The way the program sets up the robot is to define a drawing area on a flate plane with three points: #righttop, #leftbottom, and #rightbottom. In this section, you will learn how to calibrate these three points and have the program remember them.
+
+## Robot Control
+Before starting to run the program, you should know the orientation of the robot and the two ways we will be using here to move the robot.
 
 ### Orientation
 - **x Direction**: Red arrow, toward the front of the robot. 
@@ -57,7 +59,13 @@ The way the program sets up the robot is to define a drawing area on a flate pla
 
 ### Control with EV+ Code
 
-### Setting Drawing Corners 
+
+### Robot Control Panel
+
+
+## Drawing Area Setting and Calibration
+The way the program sets up the robot is to define a drawing area on a flate plane with three points: #righttop, #leftbottom, and #rightbottom. In this section, you will learn how to calibrate these three points and have the program remember them.
+
 1) Open the robot control panel by clicking on the "Launch Robot Jog Control" button.
 
 (Insert Image)
