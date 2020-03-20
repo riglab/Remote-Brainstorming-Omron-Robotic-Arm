@@ -70,11 +70,25 @@ Before starting to run the program, you should know the orientation of the robot
 <img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Robot%20Orientation.PNG" width="500"/>
 </p>
 
-### Control with EV+ Code
+### Control with eV+ Code
+ACE software uses eV+ language to control the robot directly, we will list out a few common commands here. Go to ACE and open the "Montitor Window", your laptop need to be connecting to the robot to be able to do so.
+
+<p align="center">
+<img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Monitor%20Window.jpg" width="500"/>
+</p>
+
+- **Setting Default Speed**
+  The robot is actually really strong and can move really fast to hurt people. before starting to control it, it is recommended to set the default speed of the robot to lower value. The value "10" here means the 10% of the full speed, as you can do 0-100 with the variable.
+  ```
+  .do speed 10 always
+  ```
 
 
 ### Robot Control Panel
 
+<p align="center">
+<img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Robot%20Control%20Panel.PNG" width="500"/>
+</p>
 
 ## Drawing Area Setting and Calibration
 The way the program sets up the robot is to define a drawing area on a flate plane with three points: #righttop, #leftbottom, and #rightbottom. In this section, you will learn how to calibrate these three points and have the program remember them.
