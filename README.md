@@ -79,11 +79,23 @@ ACE software uses eV+ language to control the robot directly, we will list out a
 
 - **Setting Default Speed**
   
-  The robot is actually really strong and can move really fast to hurt people. before starting to control it, it is recommended to set the default speed of the robot to lower value. The value "10" here means the 10% of the full speed, as you can do 0-100 with the variable.
+  The robot is actually really strong and can move really fast to hurt people. before starting to control it, it is recommended to set the default speed of the robot to lower value. 
   ```
   .do speed 10 always
   ```
-
+  The value "10" here means the 10% of the full speed, as you can do 0-100 with the variable. The "always" here means dsetting the default, if you did not add it, the speed setting will only remain for the next command line.
+  
+- **Moving with Straight Line**
+  
+  The robot can be move under the world xyz coordinates with point-to-point straight line with the displacements you set.
+  ```
+  .do moves shift (here by x,y,z)
+  ```
+  -"moves shift" means moving in straight line with the shift setting.
+  
+  -"here by" means seeing the original point as the staring point.
+  
+  -"x,y,z" will be the values of the displacements for three directions with unit of mm.
 
 ### Robot Control Panel
 
