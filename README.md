@@ -78,6 +78,7 @@ ACE software uses eV+ language to control the robot directly, we will list out a
 </p>
 
 - **Setting Default Speed**
+  
   The robot is actually really strong and can move really fast to hurt people. before starting to control it, it is recommended to set the default speed of the robot to lower value. The value "10" here means the 10% of the full speed, as you can do 0-100 with the variable.
   ```
   .do speed 10 always
