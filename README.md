@@ -120,6 +120,8 @@ Beside using direct commands to control the robot, you will be able to use the c
 
 
 ## Drawing Area Setting and Calibration
+If you have set up the robot before without changing the position, you can skip this section.
+
 The way the program sets up the robot is to define a drawing area on a flate plane with three points: #righttop, #leftbottom, and #rightbottom. The drawing area is usually setup somewhat parallel to the y-z plane of the robot. In this section, you will learn how to calibrate these three points and have the program remember them.
 
 Please make sure you take down the cap of the marker before starting the process.
@@ -141,7 +143,7 @@ Please make sure you take down the cap of the marker before starting the process
 <img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Robot%20Control%20Panel.PNG" width="500"/>
 </p>
 
-5) Second point to do is the **#leftbottom** corner. It the same as setting up the #righttop corner with the steps above. Please make sure the width and height of the drawing area does not exceed the limitation of the robotic arm. Use the drop-down menu on the right top of the Robot Jog Control and chose "#leftbottom" and click the "Here" button, the program will remember the joint positions.**Important: write down the z coordiante of this position, you will need it later when defining the #rightbottom.**
+5) Second point to do is the **#leftbottom** corner. It is the same as setting up the #righttop corner with the steps above. Please make sure the width and height of the drawing area does not exceed the limitation of the robotic arm. Use the drop-down menu on the right top of the Robot Jog Control and chose "#leftbottom" and click the "Here" button, the program will remember the joint positions.**Important: write down the z coordiante of this position, you will need it later when defining the #rightbottom.**
 
 6) Finally, you will need to define the **#rightbottom** corner, it should be easier with the y coordiante from #righttop and z coordiante from #leftbottom. In this step, you are just going make sure the x coordiante of the #rightbottom corner to define the drawing plane. use the drop-down menu on the right top of the Robot Jog Control and chose "#rightbottom" and click the "Here" button, the program will remember the joint positions.
 
@@ -149,7 +151,13 @@ Please make sure you take down the cap of the marker before starting the process
 
 ## Tasks Running
 
+Go back to the main screen of ACE and open the "Task Status Control", double-click on the "SmartController" to see the task status. For this controller, you will be able to run 4 different tasks, pre-program with eV+, simultaneously. The program we have here have two tasks:
+- **bufferdraw**: the task that remembers #righttop, #leftbottom, and #rightbottom corners of the drawing area and calculates the movement.
+- **serialread**: the task that communicate with Processing to get the drawing position, please refer to later section for Processing. 
 
+<p align="center">
+<img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Task%20Status%20Control.PNG" width="500"/>
+</p>
 
 
 ## Processing
