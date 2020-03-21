@@ -61,6 +61,9 @@ Please refer to individual section for detailed intructions or steps:
 
 
 ## Robot Control
+
+**Remember to hold the physical emergency stop button of the robot during the time you are controlling it, it can easily break things or hurt people. Press the red button immediately when anything goes wrong!!!**
+
 Make sure you have turn on he high power mode so that the robot can actually move, step 8 from the last section.
 Before starting to run the program, you should know the orientation of the robot and the two ways we will be using here to move the robot.
 
@@ -120,6 +123,9 @@ Beside using direct commands to control the robot, you will be able to use the c
 
 
 ## Drawing Area Setting and Calibration
+
+**Remember to hold the physical emergency stop button of the robot during the time you are controlling it, it can easily break things or hurt people. Press the red button immediately when anything goes wrong!!!**
+
 If you have set up the robot before without changing the position, you can skip this section.
 
 The way the program sets up the robot is to define a drawing area on a flate plane with three points: #righttop, #leftbottom, and #rightbottom. The drawing area is usually setup somewhat parallel to the y-z plane of the robot. In this section, you will learn how to calibrate these three points and have the program remember them.
@@ -149,16 +155,27 @@ Please make sure you take down the cap of the marker before starting the process
 
 7) Write down the approxiate size of the drawing area you just set, the width and height, you would need them for the Processing program. 
 
+8) After setting the three points, please move the robot away from the drawing board without touching it. If possible, move the robot to somewhere close to the center of the drawing area for later use. 
+
 ## Tasks Running
 
-Go back to the main screen of ACE and open the "Task Status Control", double-click on the "SmartController" to see the task status. For this controller, you will be able to run 4 different tasks, pre-program with eV+, simultaneously. The program we have here have two tasks:
+**Remember to hold the physical emergency stop button of the robot during the time you are controlling it, it can easily break things or hurt people. Press the red button immediately when anything goes wrong!!!**
+
+1) Go back to the main screen of ACE and open the "Task Status Control", double-click on the "SmartController" to see the task status. For this controller, you will be able to run 4 different tasks, pre-program with eV+, simultaneously. The program we have here have two tasks:
 - **bufferdraw**: the task that remembers #righttop, #leftbottom, and #rightbottom corners of the drawing area and calculates the movement.
-- **serialread**: the task that communicate with Processing to get the drawing position, please refer to later section for Processing. 
+- **readserial**: the task that communicate with Processing to get the drawing position, please refer to later section for Processing. 
 
 <p align="center">
 <img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Task%20Status%20Control.PNG" width="500"/>
 </p>
 
+For conventional setting, we will first setup "Task 1" with **readserial** and then setup "Task 0" with **bufferdraw**.
+
+2) Right-click on "Task 1" and choose "start the task" and use the drop-down menu to find **readserial** task. Make sure the task start with a green flag indication.
+
+3) Right-click on "Task 0" and choose "start the task" and use the drop-down menu to find **bufferdraw** task. Make sure the task start with a green flag indication. **Important: when the bufferdraw task starting to run, the robot will move in sequence from #leftbottom to center, center to #rightbottom, back to center, center to #righttop, and finally back to center. Please do not be scared by the sudden movement. During the same time, remember to hold the physical emergency stop button of the robot during the time you are controlling it, it can easily break things or hurt people. Press the red button immediately when anything goes wrong!!!**
+
+4) Make sure both of the tasks are running properly with green flags indication, if yes, you can proceed to the next section and start the Processing program. 
 
 ## Processing
 
