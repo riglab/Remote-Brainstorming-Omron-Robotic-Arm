@@ -216,6 +216,10 @@ Serial roboPort = new Serial(this, Serial.list()[0], 9600);
 
 7) After successfully lunching the program, you should be able to press the left-click of your mouse and draw on the launching window, the robot should do the exact same drawing you have!
 
+<p align="center">
+<img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/Processing_Drawing.PNG" width="500"/>
+</p>
+
 
 ```
 
