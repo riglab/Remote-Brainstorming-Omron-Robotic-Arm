@@ -134,17 +134,18 @@ Please make sure you take down the cap of the marker before starting the process
 
 3) While moving the robot around, please make sure the marker is not touching the drawing board, which is toward the x direction. Adjust the y and z directions to the position you want and slowly move in the x direction till the tip of the marker is pressing the drawing board. 
 
-4) First point to do is usually the #righttop corner. After you find the point following the previous step, use the drop-down menu on the right top of the Robot Jog Control and chose "#righttop" and click the "Here" button, the program will remember the joint positions.
+4) First point to do is usually the **#righttop** corner. After you find the point following the previous step, use the drop-down menu on the right top of the Robot Jog Control and chose "#righttop" and click the "Here" button, the program will remember the joint positions.
 **Important: write down the y coordiante of this position, you will need it later when defining the #rightbottom.**
 
 <p align="center">
 <img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/ACE_Robot%20Control%20Panel.PNG" width="500"/>
 </p>
 
-5) Second point to do is the #leftbottom corner. It the same as setting up the #righttop corner with the steps above. Please make sure the width and hight of the drawing area does not exceed the limitation of the robotic arm. Use the drop-down menu on the right top of the Robot Jog Control and chose "#leftbottom" and click the "Here" button, the program will remember the joint positions.**Important: write down the z coordiante of this position, you will need it later when defining the #rightbottom.**
+5) Second point to do is the **#leftbottom** corner. It the same as setting up the #righttop corner with the steps above. Please make sure the width and height of the drawing area does not exceed the limitation of the robotic arm. Use the drop-down menu on the right top of the Robot Jog Control and chose "#leftbottom" and click the "Here" button, the program will remember the joint positions.**Important: write down the z coordiante of this position, you will need it later when defining the #rightbottom.**
 
-6) Finally, you will need to define the #rightbottom corner, it should be easier with the y coordiante from #righttop and z coordiante from #leftbottom. In this step, you are just going make sure the x coordiante of the #rightbottom corner to define the drawing plane. use the drop-down menu on the right top of the Robot Jog Control and chose "#rightbottom" and click the "Here" button, the program will remember the joint positions.
+6) Finally, you will need to define the **#rightbottom** corner, it should be easier with the y coordiante from #righttop and z coordiante from #leftbottom. In this step, you are just going make sure the x coordiante of the #rightbottom corner to define the drawing plane. use the drop-down menu on the right top of the Robot Jog Control and chose "#rightbottom" and click the "Here" button, the program will remember the joint positions.
 
+7) Write down the approxiate size of the drawing area you just set, the width and height, you would need them for the Processing program. 
 
 ## Tasks Running
 
