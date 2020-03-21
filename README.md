@@ -175,17 +175,52 @@ For conventional setting, we will first setup "Task 1" with **readserial** and t
 
 3) Right-click on "Task 0" and choose "start the task" and use the drop-down menu to find **bufferdraw** task. Make sure the task start with a green flag indication. **Important: when the bufferdraw task starting to run, the robot will move in sequence from #leftbottom to center, center to #rightbottom, back to center, center to #righttop, and finally back to center. Please do not be scared by the sudden movement. During the same time, remember to hold the physical emergency stop button of the robot during the time you are controlling it, it can easily break things or hurt people. Press the red button immediately when anything goes wrong!!!**
 
-4) Make sure both of the tasks are running properly with green flags indication, if yes, you can proceed to the next section and start the Processing program. 
+4) Make sure that both of the tasks are running properly with green flags indication, if yes, you can proceed to the next section and start the Processing program. 
 
 ## Processing
 
-[adeptRobotController_V2.pde](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Processing%20Code/adeptRobotController_V2.pde)
+We here use Processing as a medium to transfer the drawing/sketching to positions for the robotic arm. Processing is using serical communication through USB cale to send data to the robotic arm, please make sure you have connect both of the USB cables from the robot to your laptop before starting the program.
+
+The code we have for Processing will setup window for drawing and you will need to set the size of the window to somewhat close to the proportion of the drawing area for the robot. The code will scale down the width and height to -1 to 1 and use serial communication to send date to the robot controller, the controller will then re-scale the width and height for actual drawing area.
+
+1) Connect the **USB Serial communication Cable (transparent one)** to your laptop, you will need this to perform serial communication. 
+
+2) Please download the Processing sketch here: [adeptRobotController_V2.pde](https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Processing%20Code/adeptRobotController_V2.pde).
+
+3) Open the sketch with Processing.
+
+<p align="center">
+<img src="https://github.com/riglab/Remote-Brainstorming-Omron-Robotic-Arm/blob/master/Images/Processing.PNG" width="500"/>
+</p>
+
+
+4) Find the following code in the sketch:
+```
+int screenSizeX = 1600;
+int screenSizeY = 900;
+```
+Change the width and height to the sizes that fit the screen of your laptop, the unit is in pixel. Try to keep the proportion to somewhat close to the drawing area of the robot.
+
+
+5) Find the following code in the sketch:
+```
+size (1600, 900);
+```
+Change the variables you have from the previous step.
+
+
+6) Make sure you find the COM port for the robot **USB Serial communication Cable (transparent one)** before running the program. The code below is the line that define the serial communication port.
+```
+Serial roboPort = new Serial(this, Serial.list()[0], 9600);
+```
+
+7) After successfully lunching the program, you should be able to press the left-click of your mouse and draw on the launching window, the robot should do the exact same drawing you have!
 
 
 ```
 
-```
 
+```
 <p align="center">
 <img src="" width="500"/>
 </p>
